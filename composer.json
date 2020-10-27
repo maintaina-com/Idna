@@ -1,7 +1,7 @@
 {
     "name": "horde/idna",
     "description": "IDNA normalization library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org",
     "license": "BSD-2-Clause",
     "authors": [
@@ -12,24 +12,21 @@
         }
     ],
     "version": "1.1.2",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2"
+        "horde/exception": "dev-master",
+        "horde/util": "dev-master"
     },
     "suggest": {
         "ext-intl": "*"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Idna": "1.*",
-        "pear-horde/Horde_Idna": "1.*"
     },
     "autoload": {
         "psr-0": {
